@@ -1,0 +1,45 @@
+permalink: /:year/:month/:day/:title/
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
+
+
+paginate: 10
+paginate_path: ":num"
+baseurl: ""
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "一只兔子的认真"
+email: "vivlanwong120729@gmail.com"
+description: "关注.net node.js 前段 设计模式"
+github_username:  "vivlanwong"
+#swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
+disqus_shortname: "vivianwong88"
+
+
+
+
+url: "http://blog.vemex.cn"
+imgrepo: "http://blog.vemex.cn/static/img"
+
+
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+
+gems: [jekyll-paginate]
